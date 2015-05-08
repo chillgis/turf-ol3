@@ -10,7 +10,7 @@
   "scripts": {
     "start": "",
     "build": "gitbook build --config book.json && cp *.html _book/",
-    "serve": "gitbook serve --config book.json",
+    "serve": "npm run build && gitbook serve --config book.json",
     "deploy": "./node_modules/.bin/gh-pages-deploy"
   },
   "gh-pages-deploy": {
